@@ -1,0 +1,66 @@
+<!DOCTYPE html>  <!-- knows we're dealing with html-->
+<html lang = 'en'> <!-- always have an open and closing element (always start a document with this) - they're called tags, add lang attribute for language-->
+<head> <!-- Contains the metadata-->   
+    <meta charset="utf-8"/> <!-- important for special characters, meta tags do not need to be closed like the other tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+    <script src="https://kit.fontawesome.com/067a471b41.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="index.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Solving The Pandemic</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+</head>
+<body> 
+
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-2 m-5" id="finish_polygons">
+                <button type="button" onclick="displayall()" class="btn btn-outline-dark btn-info px-5" id="finished_polygons_btn">Finished?</button>
+            </div>
+           
+            <div class="offset-5 col-4 mt-3 intro-div">
+                
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h1>Want to help in the fight against the Coronavirus?</h1>
+                        
+                    </div>
+                    <div class="card-body" id="signinarea">
+                      <h5 class="card-title">Already have a login code?</h5>
+                      <a href="#" onclick="startlogin()" class="btn btn-primary" id="loginentrybtn">Log-in</a>
+                      
+
+                      <h5 class="mt-4">Need a code?</h5>
+                      <a href="#" class="btn btn-primary">Sign-up</a>
+                    </div>
+                    <div class="card-footer text-muted" id="infobox">
+                        <button type="button" onclick= "addInfo()" class="btn  btn-outline-dark px-5" id="more-info-btn">What does this website do?</button>
+                        
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div id="mapid"></div>
+    
+
+    <script src="script.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

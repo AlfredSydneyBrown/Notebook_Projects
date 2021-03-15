@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;500&display=swap');
+
+body {
+    font-family: 'Dosis', serif !important;
+  }
+
+#mapid {
+    position: absolute;
+    width: 100.0%;
+    height: 100.0%;
+    left: 0.0%;
+    top: 0.0%;
+    z-index: -1;
+}
+
+
+.intro-div{
+    border-radius: 5px;
+}
+
+#finish_polygons{
+    z-index: -1;
+}
